@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: pacman;
+    src: url(.../tipografia/pacman.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url(../imagenes/pacmann.png);
+}
+
+.fondo{
+    background-image: url(../imagenes/tablero2.png);
+    background-size: 105%;
+    font-family: pacman;
+    background-position: center;
+    height: 100vh;
+
+    color: rgb(255, 68, 0);
+    background-repeat: no-repeat;
+}
+.aliniar{
+    color: aliceblue;
+    border: 8px solid rgb(115, 45, 20);
+    font-size: 25px;
+    font-family: pacman;
+    background: rgb(115, 45, 20);
+}
+.aliniar2{
+    color: aliceblue;
+    border: 8px solid rgb(115, 45, 20);
+    font-size: 25px;
+    font-family: pacman;
+    background: rgb(115, 45, 20);
+}
+
+
+.paccman{
+    position: relative;
+    animation-duration: 5s;
+    animation-name: pacman;
+    animation-iteration-count: infinite;
+    animation-delay: 2ms;
+    top: 130px;
+    left: 30px;
+}
+
+@keyframes pacman {
+    0% {top: 130px; left: 30px;}
+    10% {top: 130px; left: 290px;}
+    20% {top: 210px; left: 290px;}
+    30% {top: 210px; left: 150px;}
+    35% {top: 640px; left: 150px;}
+    45% {top: 625px; left: 1060px;}
+    50% {top: 700px; left: 1060px;}
+    55% {top: 700px; left: 1135px;}
+    60% {top: 630px; left: 1135px;}
+    70% {top: 630px; left: 1170px;}
+    80% {top: 565px; left: 1170px;}
+    85% {top: 565px; left: 1060px;}
+    90% {top: 425px; left: 1060px;}
+    100% {top: 425px; left: 1250px;}
+    
+    
+
+   
+}
+audio{
+    width: 30px;
+    box-shadow: 5px 5px 20px rgb(100, 100, 231);
+    border-radius: 30px;
+    transform: scale(1.05);
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    body {
+        background-color: coral;
+        background-image: url(../imagenes/web.webp);
+    }
+    
+    @keyframes pacman {
+        0%  {top: 0px; left: 0px;}
+        40% {top: 310px; left: 0px;}
+        45% {left: 76px; top: 510px;}
+        50% {top: 280px; }
+        100% {top: 410px; left: 700px; rotate: 0deg;}
+        
+   
+    }
+}
+
+
