@@ -80,16 +80,20 @@ audio{
         background-color: coral;
         background-image: url(../imagenes/web.webp);
     }
-    
-    @keyframes pacman {
-        0%  {top: 0px; left: 0px;}
-        40% {top: 310px; left: 0px;}
-        45% {left: 76px; top: 510px;}
-        50% {top: 280px; }
-        100% {top: 410px; left: 700px; rotate: 0deg;}
-        
-   
+    .fondo{
+        background-image: url(../imagenes/fondo2.jfif);
+        background-size: 105%;
+        font-family: pacman;
+        background-position: center;
+        height: 100vh;
+        color: rgb(255, 68, 0);
+        background-repeat: no-repeat;
     }
+
+    
+    
 }
+
+
 
 
